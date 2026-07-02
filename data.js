@@ -389,9 +389,24 @@ function getHex(ix){
   if(!h||!h[0]){
     h=[`☯`,`未名卦`,`当下未知`,'','此卦象尚在书写之中。','保持开放。','','','','','',''];
   }
-  return {
+  var base={
     symbol:h[0]||'☯',name:h[1]||'未名卦',tag:h[2]||'当下未知',
     short:h[3]||'',desc:h[4]||'此卦尚在书写中。',advice:h[5]||'保持开放。',
     yao:[h[6]||'',h[7]||'',h[8]||'',h[9]||'',h[10]||'',h[11]||'']
   };
+  // 挂载 enrich 补充数据（如果有）
+  if(typeof getEnrich==='function'){
+    var en=getEnrich(base.name);
+    if(en){
+      base.judgment=en.judgment||'';
+      base.image=en.image||'';
+      base.goodPerson=en.goodPerson||'';
+      base.event=en.event||'';
+      base.yi=en.yi||[];
+      base.ji=en.ji||[];
+      base.direction=en.direction||'';
+      base.element=en.element||'';
+    }
+  }
+  return base;
 }
