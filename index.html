@@ -384,6 +384,92 @@ body{display:flex;justify-content:center;background:linear-gradient(180deg,var(-
 /* 页头小导航（在答题页/结果页顶部） */
 .top-back{background:none;border:none;color:var(--il);font-size:14px;cursor:pointer;padding:6px 0;display:inline-flex;align-items:center;gap:4px;margin-bottom:12px;transition:color 0.2s;}
 .top-back:hover{color:var(--ink);}
+
+/* 对比页 */
+.compare-wrap{display:flex;flex-direction:column;gap:20px;padding:10px 0;}
+.compare-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;}
+.compare-card{padding:16px;background:rgba(255,255,255,0.5);border:1px solid var(--bd);border-radius:12px;text-align:center;transition:all 0.3s;}
+.compare-card:hover{background:rgba(255,255,255,0.8);transform:translateY(-2px);}
+.compare-card .cc-sym{font-size:48px;font-family:'Noto Serif SC',serif;color:var(--ink);margin-bottom:6px;}
+.compare-card .cc-name{font-family:'ZCOOL XiaoWei',serif;font-size:18px;color:var(--ink);letter-spacing:2px;}
+.compare-card .cc-tag{font-size:12px;color:var(--il);margin-top:4px;}
+.compare-card .cc-date{font-size:11px;color:var(--gold);margin-top:6px;}
+.compare-arrow{text-align:center;font-size:24px;color:var(--gold);animation:arrowPulse 1.5s ease-in-out infinite;}
+.compare-change{padding:16px;background:var(--dim-bg);border-radius:12px;border-left:4px solid var(--gold);margin-top:8px;}
+.compare-change .cc-label{font-size:12px;color:var(--gold);letter-spacing:2px;margin-bottom:8px;}
+.compare-change p{font-size:14px;line-height:2;color:var(--ink);margin:0;}
+.compare-viz{padding:16px;background:rgba(255,255,255,0.5);border-radius:12px;border:1px solid var(--bd);}
+.compare-viz .cv-title{font-size:13px;color:var(--gold);letter-spacing:2px;margin-bottom:12px;text-align:center;}
+.compare-viz .cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.compare-viz .cv-item{text-align:center;padding:10px;background:rgba(201,169,110,0.1);border-radius:8px;}
+.compare-viz .cv-item .cv-icon{font-size:20px;margin-bottom:4px;}
+.compare-viz .cv-item .cv-text{font-size:12px;color:var(--il);}
+.compare-summary{padding:20px;background:linear-gradient(135deg,color-mix(in srgb, var(--accent) 8%, transparent),var(--dim-bg));border-radius:16px;border:1px solid var(--bd);text-align:center;margin-top:8px;}
+.compare-summary .cs-title{font-family:'ZCOOL XiaoWei',serif;font-size:18px;color:var(--ink);margin-bottom:10px;}
+.compare-summary .cs-text{font-size:14px;line-height:2;color:var(--il);}
+
+/* 卦象列表 */
+.hex-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px 0;}
+.hex-grid-item{padding:10px;background:rgba(255,255,255,0.5);border:1px solid var(--bd);border-radius:8px;text-align:center;cursor:pointer;transition:all 0.3s;}
+.hex-grid-item:hover{background:rgba(201,169,110,0.15);transform:translateY(-2px);border-color:var(--gold);}
+.hex-grid-item .hgi-sym{font-size:28px;font-family:'Noto Serif SC',serif;color:var(--ink);}
+.hex-grid-item .hgi-name{font-size:11px;color:var(--il);margin-top:4px;letter-spacing:1px;}
+
+/* 卦象详情 */
+#hexDetailDesc .classic-box{margin-bottom:16px;}
+#hexDetailDesc .yao-detail{margin:16px 0;padding:14px;background:var(--dim-bg);border-radius:10px;border-left:4px solid var(--gold);}
+#hexDetailDesc .yao-detail .yao-num{font-size:12px;color:var(--gold);letter-spacing:2px;margin-bottom:8px;}
+#hexDetailDesc .yao-detail p{font-size:14px;line-height:2;color:var(--ink);margin:0;}
+
+/* 五行可视化 */
+.five-wrap{padding:10px 0;}
+.five-ring{position:relative;width:280px;height:280px;margin:0 auto 24px;}
+.five-element{position:absolute;width:48px;height:48px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;color:#fff;transition:all 0.3s;cursor:pointer;}
+.five-element:hover{transform:scale(1.2);box-shadow:0 0 20px currentColor;}
+.five-element.wood{background:#5b8c5a;top:10px;left:50%;transform:translateX(-50%);}
+.five-element.fire{background:#b54b3b;top:50px;right:10px;}
+.five-element.earth{background:#c9a96e;bottom:10px;left:50%;transform:translateX(-50%);}
+.five-element.metal{background:#7a8a9a;top:50px;left:10px;}
+.five-element.water{background:#4a6fa5;bottom:50px;left:50%;transform:translateX(-50%);}
+.five-line{position:absolute;height:2px;background:var(--gold);opacity:0.6;}
+.five-line.sheng{background:#5b8c5a;}
+.five-line.ke{background:#b54b3b;}
+.five-info{padding:16px;background:var(--dim-bg);border-radius:12px;border-left:4px solid var(--gold);margin-bottom:16px;}
+.five-info .fi-title{font-size:13px;color:var(--gold);letter-spacing:2px;margin-bottom:8px;}
+.five-info p{font-size:14px;line-height:2;color:var(--ink);margin:0;}
+
+/* 暗色模式 */
+body.dark{
+  --pp:#1a1408;
+  --gl:#f5efe6;
+  --ink:#f0e6d2;
+  --il:#a89878;
+  --bd:#3a3224;
+  --accent:#c9a96e;
+  --gold:#c9a96e;
+  --rl:#d66b5b;
+  --dim-bg:rgba(201,169,110,0.1);
+  --dim-color:#c9a96e;
+}
+body.dark .bg-layer{background:radial-gradient(ellipse at center, #1a1408 0%, #0d0a05 100%);}
+body.dark .ink-splash{background:rgba(201,169,110,0.06);}
+body.dark .app{background:rgba(13,10,5,0.85);}
+body.dark .ft,body.dark .pe-card,body.dark .yiji-box,body.dark .compare-card{background:rgba(26,20,8,0.5);}
+body.dark .modal-box{background:rgba(26,20,8,0.95);}
+body.dark .modal{background:rgba(0,0,0,0.7);}
+body.dark .quiz-option{background:rgba(26,20,8,0.5);}
+body.dark .quiz-option.selected{background:rgba(201,169,110,0.2);}
+body.dark .last-hex{background:linear-gradient(135deg,rgba(201,169,110,0.1),rgba(139,37,0,0.05));}
+body.dark .icon-btn{background:rgba(26,20,8,0.7);}
+body.dark .hex-grid-item{background:rgba(26,20,8,0.5);}
+
+/* 主题切换按钮 */
+.theme-toggle{right:148px;font-size:14px;}
+
+/* 性能优化 */
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms !important;transition-duration:0.01ms !important;}
+}
 </style>
 </head>
 <body>
@@ -422,6 +508,10 @@ body{display:flex;justify-content:center;background:linear-gradient(180deg,var(-
 <!-- 音效/背景音乐/历史按钮 -->
 <button class="icon-btn music-toggle" id="btnMusic" title="开启/关闭背景音乐">🎶</button>
 <button class="icon-btn sound-toggle" id="btnSound" title="开启/关闭音效">🔔</button>
+<button class="icon-btn hist-btn theme-toggle" id="btnTheme" title="切换明暗主题">🌓</button>
+<button class="icon-btn hist-btn" id="btnFive" title="五行相生相克">🌀</button>
+<button class="icon-btn hist-btn" id="btnHexList" title="六十四卦">📚</button>
+<button class="icon-btn hist-btn" id="btnFav" title="收藏卦象">⭐</button>
 <button class="icon-btn hist-btn" id="btnHist" title="历史卦象">📜</button>
 
 <div class="app" id="app">
@@ -528,8 +618,11 @@ body{display:flex;justify-content:center;background:linear-gradient(180deg,var(-
     <div class="algo-box" id="algoContent"></div>
   </details>
   <div class="rb">
-    <button class="bg" id="btnUnlock">🔓 看广告解锁完整解读</button>
+    <button class="bg" id="btnUnlock" style="display:none;">🔓 看广告解锁完整解读</button>
     <button class="bp" id="btnShare">📤 生 成 分 享 卡 片</button>
+    <button class="bs" id="btnFavorite">⭐ 收藏此卦象</button>
+    <button class="bs" id="btnAddNote">📝 添加笔记</button>
+    <button class="bs" id="btnReminder">⏰ 设置每日运势提醒</button>
     <button class="bs" id="btnRestart">🔄 重新测试（七日后再来）</button>
   </div>
   <div class="sp" id="sharePrev"></div>
@@ -554,7 +647,48 @@ body{display:flex;justify-content:center;background:linear-gradient(180deg,var(-
   <button class="top-back" id="btnHistBack">← 返回</button>
   <div class="hh">卦 象 记 录</div>
   <div class="hh-sub">所有测过的卦都会留在这里</div>
+  <button class="bg" id="btnCompare" style="margin-bottom:16px;display:none;">📊 对比最近两次卦象</button>
   <div class="hist-list" id="histList"></div>
+</div>
+
+<!-- Compare -->
+<div class="screen" id="s-compare">
+  <button class="top-back" id="btnCompareBack">← 返回</button>
+  <div class="hh">卦 象 对 比</div>
+  <div class="hh-sub">看看你的变化</div>
+  <div class="compare-wrap" id="compareContent"></div>
+</div>
+
+<!-- Favorites -->
+<div class="screen" id="s-favorites">
+  <button class="top-back" id="btnFavBack">← 返回</button>
+  <div class="hh">收 藏 卦 象</div>
+  <div class="hh-sub">记录你有共鸣的卦</div>
+  <div class="hist-list" id="favList"></div>
+</div>
+
+<!-- Hexagram List -->
+<div class="screen" id="s-hexlist">
+  <button class="top-back" id="btnHexListBack">← 返回</button>
+  <div class="hh">六 十 四 卦</div>
+  <div class="hh-sub">一览六十四卦象</div>
+  <div class="hex-grid" id="hexGrid"></div>
+</div>
+
+<!-- Hexagram Detail -->
+<div class="screen" id="s-hexdetail">
+  <button class="top-back" id="btnHexDetailBack">← 返回</button>
+  <div class="hd" id="hexDetailDisp"></div>
+  <div class="hl" id="hexDetailLines"></div>
+  <div class="rd" id="hexDetailDesc"></div>
+</div>
+
+<!-- Five Elements -->
+<div class="screen" id="s-fiveelements">
+  <button class="top-back" id="btnFiveBack">← 返回</button>
+  <div class="hh">五 行 相 生 相 克</div>
+  <div class="hh-sub">万物相生，循环不息</div>
+  <div class="five-wrap" id="fiveContent"></div>
 </div>
 
 </div>
@@ -610,6 +744,23 @@ body{display:flex;justify-content:center;background:linear-gradient(180deg,var(-
     <div class="modal-actions">
       <button class="bp" id="btnRemindGo">执 意 起 卦</button>
       <button class="bs" id="btnRemindCancel">看 看 本 次 卦 象</button>
+    </div>
+  </div>
+</div>
+
+<!-- Note Modal -->
+<div class="modal" id="overlayNote">
+  <div class="modal-box">
+    <button class="modal-close" data-close>✕</button>
+    <div class="modal-icon">📝</div>
+    <div class="modal-title">添 加 笔 记</div>
+    <div class="modal-body" style="text-align:left;">
+      <textarea id="noteInput" rows="4" style="width:100%;padding:12px;border:1px solid var(--bd);border-radius:8px;font-size:14px;color:var(--ink);background:rgba(255,255,255,0.5);resize:none;margin-bottom:12px;font-family:'Noto Sans SC',sans-serif;" placeholder="记录你对这一卦的感悟..."></textarea>
+      <div style="font-size:12px;color:var(--il);text-align:center;">笔记将保存到本地</div>
+    </div>
+    <div class="modal-actions">
+      <button class="bp" id="btnNoteSave">保 存 笔 记</button>
+      <button class="bs" data-close>取 消</button>
     </div>
   </div>
 </div>

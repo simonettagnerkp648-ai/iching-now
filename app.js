@@ -22,7 +22,17 @@ const Q = [
     {e:'🌋',t:'翻江倒海，旧的在散架',v:0},
     {e:'🏔',t:'死水一潭，动弹不得',v:1},
     {e:'🌱',t:'悄悄在长，有活气',v:2},
-    {e:'⚡',t:'针尖对麦芒，挺僵',v:3}]}
+    {e:'⚡',t:'针尖对麦芒，挺僵',v:3}]},
+  {q:'环顾四周，你感受到的整体氛围是？',o:[
+    {e:'🌋',t:'动荡不安，一切都在重新洗牌',v:0},
+    {e:'🏔',t:'风平浪静，甚至有些沉闷',v:1},
+    {e:'🌱',t:'生机勃勃，充满希望',v:2},
+    {e:'⚡',t:'剑拔弩张，随时可能爆发',v:3}]},
+  {q:'如果用天气形容这一周的外部环境？',o:[
+    {e:'🌋',t:'暴风雨前的闷热与躁动',v:0},
+    {e:'🏔',t:'无风无云的晴朗但单调',v:1},
+    {e:'🌱',t:'春风拂面，万物复苏',v:2},
+    {e:'⚡',t:'电闪雷鸣，两股气流交锋',v:3}]}
 ]},
 {d:'处境 · 位置之感',variants:[
   {q:'你当下处在一个什么样的「位置」？',o:[
@@ -39,7 +49,17 @@ const Q = [
     {e:'⛰',t:'高点位，一览众山，但扛风',v:0},
     {e:'🕳',t:'低谷，不过怎么走都是上坡',v:1},
     {e:'🛤',t:'半山腰，能上能下',v:2},
-    {e:'🌊',t:'门槛边上，马上要迈过去',v:3}]}
+    {e:'🌊',t:'门槛边上，马上要迈过去',v:3}]},
+  {q:'站在人生的地图上，你现在的坐标是？',o:[
+    {e:'⛰',t:'山峰之巅，风景独好但险峻',v:0},
+    {e:'🕳',t:'深谷之中，仰望星空但路长',v:1},
+    {e:'🛤',t:'十字路口，四通八达但迷茫',v:2},
+    {e:'🌊',t:'海岸线边，即将入海或上岸',v:3}]},
+  {q:'用一个地理名词形容你此刻的处境？',o:[
+    {e:'⛰',t:'高原——视野开阔但氧气稀薄',v:0},
+    {e:'🕳',t:'盆地——四面环山但安稳',v:1},
+    {e:'🛤',t:'平原——一望无际但方向不明',v:2},
+    {e:'🌊',t:'河口——河流汇入大海的临界点',v:3}]}
 ]},
 {d:'处境 · 阻碍之形',variants:[
   {q:'阻碍在你面前以什么形态出现？',o:[
@@ -56,7 +76,17 @@ const Q = [
     {e:'🏔',t:'明摆着的大块头，绕不过',v:0},
     {e:'💧',t:'一堆碎渣子，哪件都不大',v:1},
     {e:'🌫',t:'心里没底那种，堵得慌',v:2},
-    {e:'⚡',t:'突发状况，一下全乱套',v:3}]}
+    {e:'⚡',t:'突发状况，一下全乱套',v:3}]},
+  {q:'面前的困难，如果是一种自然现象？',o:[
+    {e:'🏔',t:'高山——需要攀登才能翻越',v:0},
+    {e:'💧',t:'沼泽——越挣扎陷得越深',v:1},
+    {e:'🌫',t:'迷雾——看不清方向不敢前进',v:2},
+    {e:'⚡',t:'闪电——瞬间摧毁一切计划',v:3}]},
+  {q:'什么东西让你感到举步维艰？',o:[
+    {e:'🏔',t:'一个巨大的障碍横在面前',v:0},
+    {e:'💧',t:'无数小事消耗着精力',v:1},
+    {e:'🌫',t:'内心的迷茫和不确定',v:2},
+    {e:'⚡',t:'突如其来的意外打断节奏',v:3}]}
 ]},
 {d:'处境 · 根基之感',variants:[
   {q:'你脚下的根基——此刻是什么触感？',o:[
@@ -73,7 +103,17 @@ const Q = [
     {e:'🪨',t:'稳得一批，纹丝不动',v:0},
     {e:'🌍',t:'还行，就是稍微有点颤',v:1},
     {e:'🕊',t:'悬着，找不着地儿',v:2},
-    {e:'🌊',t:'随波走，要啥地',v:3}]}
+    {e:'🌊',t:'随波走，要啥地',v:3}]},
+  {q:'如果你是一棵树，你的根扎得如何？',o:[
+    {e:'🪨',t:'深扎岩层——坚不可摧',v:0},
+    {e:'🌍',t:'扎在泥土——稳固但偶有震动',v:1},
+    {e:'🕊',t:'飘浮在空中——尚未落地',v:2},
+    {e:'🌊',t:'随水流漂——本不需要扎根',v:3}]},
+  {q:'内心的安全感来源于哪里？',o:[
+    {e:'🪨',t:'坚实的物质基础和规划',v:0},
+    {e:'🌍',t:'基本稳定但偶有担忧',v:1},
+    {e:'🕊',t:'暂时缺失，正在寻找',v:2},
+    {e:'🌊',t:'来自变化本身，而非稳定',v:3}]}
 ]},
 // GROUP 1: 感受 🌊 水蓝
 {d:'感受 · 内心色调',variants:[
@@ -91,7 +131,17 @@ const Q = [
     {e:'🔥',t:'暖红，燥得想干点啥',v:0},
     {e:'🌊',t:'冷蓝，慢下来琢磨',v:1},
     {e:'☁',t:'灰扑扑，黏糊糊的',v:2},
-    {e:'✨',t:'透亮，没杂念',v:3}]}
+    {e:'✨',t:'透亮，没杂念',v:3}]},
+  {q:'如果你的心情是一种光，它是什么颜色？',o:[
+    {e:'🔥',t:'火光——热烈而有能量',v:0},
+    {e:'🌊',t:'月光——清冷而深邃',v:1},
+    {e:'☁',t:'暮色——朦胧而暧昧',v:2},
+    {e:'✨',t:'日光——纯净而明亮',v:3}]},
+  {q:'走进你的内心世界，看到的景象是？',o:[
+    {e:'🔥',t:'熊熊篝火，温暖而热烈',v:0},
+    {e:'🌊',t:'静谧湖面，平静而深邃',v:1},
+    {e:'☁',t:'迷雾森林，看不清前方',v:2},
+    {e:'✨',t:'雪后初晴，一片纯净',v:3}]}
 ]},
 {d:'感受 · 入梦之念',variants:[
   {q:'睡前思绪最常停在什么地方？',o:[
@@ -108,7 +158,17 @@ const Q = [
     {e:'📋',t:'待办清单，一件接一件',v:0},
     {e:'🎞',t:'某个人某句话，绕不开',v:1},
     {e:'🔮',t:'盘算以后这样那样的',v:2},
-    {e:'😴',t:'一片空白，秒睡',v:3}]}
+    {e:'😴',t:'一片空白，秒睡',v:3}]},
+  {q:'闭上眼睛那一刻，你的思绪飘向哪里？',o:[
+    {e:'📋',t:'今日未完成的工作',v:0},
+    {e:'🎞',t:'某个难忘的回忆',v:1},
+    {e:'🔮',t:'明天会发生什么',v:2},
+    {e:'😴',t:'哪里也不去，放空',v:3}]},
+  {q:'梦里通常会出现什么？',o:[
+    {e:'📋',t:'忙碌的工作场景',v:0},
+    {e:'🎞',t:'故人旧事',v:1},
+    {e:'🔮',t:'奇异的未来景象',v:2},
+    {e:'😴',t:'很少做梦，一觉天亮',v:3}]}
 ]},
 {d:'感受 · 精力水位',variants:[
   {q:'你的精力此刻在什么水位？',o:[
@@ -125,7 +185,17 @@ const Q = [
     {e:'🌊',t:'爆满，恨不得干十件事',v:0},
     {e:'🟢',t:'还行，正常输出',v:1},
     {e:'🕯',t:'虚，得歇',v:2},
-    {e:'⚡',t:'今儿精神明儿蔫',v:3}]}
+    {e:'⚡',t:'今儿精神明儿蔫',v:3}]},
+  {q:'如果用天气形容你的能量状态？',o:[
+    {e:'🌊',t:'暴风雨前的能量积蓄',v:0},
+    {e:'🟢',t:'阳光明媚的平静',v:1},
+    {e:'🕯',t:'阴天缺少阳光',v:2},
+    {e:'⚡',t:'晴雨不定的变幻',v:3}]},
+  {q:'你现在想做事情的动力是？',o:[
+    {e:'🌊',t:'非常充足，迫不及待',v:0},
+    {e:'🟢',t:'刚刚好，不多不少',v:1},
+    {e:'🕯',t:'很弱，需要外界刺激',v:2},
+    {e:'⚡',t:'时有时无，不稳定',v:3}]}
 ]},
 {d:'感受 · 预感之力',variants:[
   {q:'你对接下来会发生什么——有预感吗？',o:[
@@ -142,7 +212,17 @@ const Q = [
     {e:'🦅',t:'门儿清，心里有数',v:0},
     {e:'🌫',t:'影影绰绰，看不准',v:1},
     {e:'🏃',t:'顾不上，先过今天再说',v:2},
-    {e:'🌿',t:'不预判，来了再说',v:3}]}
+    {e:'🌿',t:'不预判，来了再说',v:3}]},
+  {q:'直觉告诉你接下来会怎样？',o:[
+    {e:'🦅',t:'非常明确，有很强的方向感',v:0},
+    {e:'🌫',t:'有点感觉，但说不清楚',v:1},
+    {e:'🏃',t:'没什么感觉，走一步看一步',v:2},
+    {e:'🌿',t:'顺其自然，不强求预知',v:3}]},
+  {q:'你相信直觉吗？',o:[
+    {e:'🦅',t:'非常相信，它很少出错',v:0},
+    {e:'🌫',t:'半信半疑，偶尔参考',v:1},
+    {e:'🏃',t:'不太相信，更相信事实',v:2},
+    {e:'🌿',t:'无所谓，信与不信都行',v:3}]}
 ]},
 // GROUP 2: 行动 ⚔ 火赤
 {d:'行动 · 应对之姿',variants:[
@@ -160,7 +240,17 @@ const Q = [
     {e:'⚔',t:'迎上去，刚正面',v:0},
     {e:'🏹',t:'避其锋芒，迂回点',v:1},
     {e:'🧘',t:'稳住不动，以静制动',v:2},
-    {e:'⛵',t:'借力打力，顺势而为',v:3}]}
+    {e:'⛵',t:'借力打力，顺势而为',v:3}]},
+  {q:'面对挑战时，你的第一反应是？',o:[
+    {e:'⚔',t:'勇敢面对，主动解决',v:0},
+    {e:'🏹',t:'寻找其他途径，避免正面冲突',v:1},
+    {e:'🧘',t:'保持冷静，观察局势',v:2},
+    {e:'⛵',t:'顺势而为，借力打力',v:3}]},
+  {q:'如果人生是一场游戏，你选择什么角色？',o:[
+    {e:'⚔',t:'战士——主动出击，不畏艰险',v:0},
+    {e:'🏹',t:'刺客——灵活机动，寻找机会',v:1},
+    {e:'🧘',t:'法师——冷静分析，运筹帷幄',v:2},
+    {e:'⛵',t:'德鲁伊——与自然和谐，顺势而为',v:3}]}
 ]},
 {d:'行动 · 人际之距',variants:[
   {q:'这一周，你与周围人的距离是怎样的？',o:[
@@ -177,7 +267,17 @@ const Q = [
     {e:'🤝',t:'被拉着，有人找我',v:0},
     {e:'🙋',t:'我找别人多',v:1},
     {e:'🚪',t:'躲着点，别太近',v:2},
-    {e:'⚡',t:'别扭着，有缝了',v:3}]}
+    {e:'⚡',t:'别扭着，有缝了',v:3}]},
+  {q:'最近在人际交往中，你感觉是？',o:[
+    {e:'🤝',t:'很受欢迎，很多人主动接近',v:0},
+    {e:'🙋',t:'积极主动，主动建立联系',v:1},
+    {e:'🚪',t:'保持距离，享受独处',v:2},
+    {e:'⚡',t:'有些矛盾，需要处理关系',v:3}]},
+  {q:'你现在最需要的人际关系是？',o:[
+    {e:'🤝',t:'被认可和支持',v:0},
+    {e:'🙋',t:'去帮助和支持他人',v:1},
+    {e:'🚪',t:'独立和空间',v:2},
+    {e:'⚡',t:'坦诚沟通解决问题',v:3}]}
 ]},
 {d:'行动 · 决断之态',variants:[
   {q:'面对需要做决定的事——你的状态更接近？',o:[
@@ -194,7 +294,17 @@ const Q = [
     {e:'✂',t:'定完了，一刀切',v:0},
     {e:'⚖',t:'权衡中，没下嘴',v:1},
     {e:'⏸',t:'往后推了，等等看',v:2},
-    {e:'🌀',t:'吊着，不定也是种定',v:3}]}
+    {e:'🌀',t:'吊着，不定也是种定',v:3}]},
+  {q:'面对重大选择时，你通常？',o:[
+    {e:'✂',t:'快速决策，果断行动',v:0},
+    {e:'⚖',t:'仔细分析，权衡利弊',v:1},
+    {e:'⏸',t:'暂时搁置，等待时机',v:2},
+    {e:'🌀',t:'顺其自然，相信直觉',v:3}]},
+  {q:'做决定对你来说是？',o:[
+    {e:'✂',t:'很容易，喜欢当机立断',v:0},
+    {e:'⚖',t:'有点难，需要反复思考',v:1},
+    {e:'⏸',t:'很难，常常拖延',v:2},
+    {e:'🌀',t:'不纠结，随缘就好',v:3}]}
 ]},
 {d:'行动 · 压力之应',variants:[
   {q:'当压力来袭时，你的应对方式更接近？',o:[
@@ -211,7 +321,17 @@ const Q = [
     {e:'🏃',t:'动手，忙起来压下去',v:0},
     {e:'🧘',t:'独处，理理头绪',v:1},
     {e:'🗣',t:'聊聊，说出来',v:2},
-    {e:'💥',t:'释放，别闷在心里',v:3}]}
+    {e:'💥',t:'释放，别闷在心里',v:3}]},
+  {q:'压力大的时候，你最想？',o:[
+    {e:'🏃',t:'出去跑一圈，动起来',v:0},
+    {e:'🧘',t:'找个安静的地方待着',v:1},
+    {e:'🗣',t:'找朋友倾诉',v:2},
+    {e:'💥',t:'大哭一场或发泄一下',v:3}]},
+  {q:'面对压力，你的本能反应是？',o:[
+    {e:'🏃',t:'积极应对，解决问题',v:0},
+    {e:'🧘',t:'冷静思考，寻找办法',v:1},
+    {e:'🗣',t:'寻求帮助，分担压力',v:2},
+    {e:'💥',t:'情绪释放，缓解压力',v:3}]}
 ]},
 // GROUP 3: 走向 🔮 金黄
 {d:'走向 · 投影之形',variants:[
@@ -229,7 +349,17 @@ const Q = [
     {e:'📈',t:'上扬的，往上',v:0},
     {e:'🌳',t:'往土里钻，扎根',v:1},
     {e:'🔄',t:'在转方向',v:2},
-    {e:'🌫',t:'啥也看不清',v:3}]}
+    {e:'🌫',t:'啥也看不清',v:3}]},
+  {q:'你觉得未来的发展趋势是？',o:[
+    {e:'📈',t:'越来越好，持续上升',v:0},
+    {e:'🌳',t:'稳扎稳打，逐步深入',v:1},
+    {e:'🔄',t:'即将改变方向',v:2},
+    {e:'🌫',t:'不确定，顺其自然',v:3}]},
+  {q:'如果用天气比喻未来，你觉得是？',o:[
+    {e:'📈',t:'晴空万里，阳光明媚',v:0},
+    {e:'🌳',t:'细雨绵绵，润物无声',v:1},
+    {e:'🔄',t:'风云变幻，即将变天',v:2},
+    {e:'🌫',t:'迷雾重重，看不清前路',v:3}]}
 ]},
 {d:'走向 · 内心召唤',variants:[
   {q:'你内心——有没有什么东西在召唤你？',o:[
@@ -246,7 +376,17 @@ const Q = [
     {e:'🧭',t:'在，明明白白',v:0},
     {e:'🌅',t:'在，但还不太清晰',v:1},
     {e:'🌿',t:'顾不上，活在当下',v:2},
-    {e:'🔇',t:'凉了，没啥召唤了',v:3}]}
+    {e:'🔇',t:'凉了，没啥召唤了',v:3}]},
+  {q:'你的人生目标清晰吗？',o:[
+    {e:'🧭',t:'非常清晰，知道要去哪里',v:0},
+    {e:'🌅',t:'有大致方向，但还不明确',v:1},
+    {e:'🌿',t:'没有明确目标，享受当下',v:2},
+    {e:'🔇',t:'曾经有过，但现在迷失了',v:3}]},
+  {q:'你现在最想做的事情是什么？',o:[
+    {e:'🧭',t:'非常清楚，正在努力实现',v:0},
+    {e:'🌅',t:'有点想法，但还没确定',v:1},
+    {e:'🌿',t:'没想太多，过好每一天',v:2},
+    {e:'🔇',t:'不知道，感觉迷茫',v:3}]}
 ]},
 {d:'走向 · 转向之问',variants:[
   {q:'如果有一个声音劝你「该换个方向了」——',o:[
@@ -263,7 +403,17 @@ const Q = [
     {e:'🏃',t:'已经在改了',v:0},
     {e:'🤔',t:'可以考虑，要看证据',v:1},
     {e:'⏳',t:'先听着，时机不到',v:2},
-    {e:'🚫',t:'免谈，没到头呢',v:3}]}
+    {e:'🚫',t:'免谈，没到头呢',v:3}]},
+  {q:'如果现在有机会换一条路，你会？',o:[
+    {e:'🏃',t:'立刻行动，毫不犹豫',v:0},
+    {e:'🤔',t:'仔细评估，看看是否合适',v:1},
+    {e:'⏳',t:'暂时不换，先等等看',v:2},
+    {e:'🚫',t:'坚决不换，继续走下去',v:3}]},
+  {q:'你觉得现在是改变方向的时候吗？',o:[
+    {e:'🏃',t:'是的，已经在行动了',v:0},
+    {e:'🤔',t:'可能是，但还在犹豫',v:1},
+    {e:'⏳',t:'不是，时机还没到',v:2},
+    {e:'🚫',t:'不是，这条路还没走完',v:3}]}
 ]},
 {d:'走向 · 关键词',variants:[
   {q:'最后——你觉得这一周最接近哪个词？',o:[
@@ -280,7 +430,17 @@ const Q = [
     {e:'💥',t:'破局，干翻点东西',v:0},
     {e:'🕯',t:'安静，重新认认自己',v:1},
     {e:'🤝',t:'跟谁接上了头',v:2},
-    {e:'🍂',t:'松手了，放下旧的',v:3}]}
+    {e:'🍂',t:'松手了，放下旧的',v:3}]},
+  {q:'这一周对你来说意味着什么？',o:[
+    {e:'💥',t:'突破——打破旧的格局',v:0},
+    {e:'🕯',t:'沉淀——积累内在力量',v:1},
+    {e:'🤝',t:'相遇——建立新的关系',v:2},
+    {e:'🍂',t:'告别——结束一段旅程',v:3}]},
+  {q:'如果给这周画一幅画，你会画什么？',o:[
+    {e:'💥',t:'冲破云层的阳光',v:0},
+    {e:'🕯',t:'深夜窗前的烛光',v:1},
+    {e:'🤝',t:'两只紧握的手',v:2},
+    {e:'🍂',t:'飘落的秋叶',v:3}]}
 ]},
 ];
 
@@ -385,6 +545,9 @@ var audioPrimed=false; // 标记是否已完成第一次用户交互（激活 Au
 var musicNodes=null;
 var COOLDOWN_MS=7*24*60*60*1000; // 7天
 var STORAGE_KEY='iching-now-history';
+var FAV_KEY='iching-now-favorites';
+var NOTE_KEY='iching-now-notes';
+var REMIND_KEY='iching-now-reminder';
 
 // ===== 存储 =====
 function loadHistory(){
@@ -396,6 +559,103 @@ function saveHistory(record){
   if(hist.length>50)hist=hist.slice(0,50);
   localStorage.setItem(STORAGE_KEY,JSON.stringify(hist));
 }
+function loadFavorites(){
+  try{return JSON.parse(localStorage.getItem(FAV_KEY)||'[]');}catch(e){return[];}
+}
+function saveFavorites(favs){
+  localStorage.setItem(FAV_KEY,JSON.stringify(favs));
+}
+function toggleFavorite(hexIdx){
+  var favs=loadFavorites();
+  var idx=favs.indexOf(hexIdx);
+  if(idx>=0){
+    favs.splice(idx,1);
+    showAlert('已取消收藏','卦象已从收藏中移除','⭐');
+  }else{
+    favs.push(hexIdx);
+    showAlert('收藏成功','卦象已添加到收藏','⭐');
+  }
+  saveFavorites(favs);
+  updateFavoriteBtn();
+}
+function isFavorite(hexIdx){
+  return loadFavorites().indexOf(hexIdx)>=0;
+}
+function updateFavoriteBtn(){
+  var btn=document.getElementById('btnFavorite');
+  if(!btn||hexIdx<0)return;
+  btn.textContent=isFavorite(hexIdx)?'⭐ 已收藏此卦象':'⭐ 收藏此卦象';
+}
+
+function loadNotes(){
+  try{return JSON.parse(localStorage.getItem(NOTE_KEY)||'{}');}catch(e){return{};}
+}
+function saveNotes(notes){
+  localStorage.setItem(NOTE_KEY,JSON.stringify(notes));
+}
+function addNote(hexIdx,text){
+  var notes=loadNotes();
+  if(!notes[hexIdx])notes[hexIdx]=[];
+  notes[hexIdx].unshift({text:text,time:Date.now()});
+  if(notes[hexIdx].length>10)notes[hexIdx]=notes[hexIdx].slice(0,10);
+  saveNotes(notes);
+}
+function getNotes(hexIdx){
+  var notes=loadNotes();
+  return notes[hexIdx]||[];
+}
+
+function loadReminder(){
+  try{return JSON.parse(localStorage.getItem(REMIND_KEY)||'null');}catch(e){return null;}
+}
+function saveReminder(r){
+  localStorage.setItem(REMIND_KEY,JSON.stringify(r));
+}
+function setDailyReminder(){
+  if(!('Notification' in window)){
+    showAlert('不支持','当前浏览器不支持推送通知','⏰');
+    return;
+  }
+  Notification.requestPermission().then(function(perm){
+    if(perm!=='granted'){
+      showAlert('未授权','请允许通知权限以接收每日运势提醒','⏰');
+      return;
+    }
+    var time='08:00';
+    saveReminder({time:time,hex:hexIdx,enabled:true});
+    showAlert('提醒已设置','每日 '+time+' 将收到卦象运势提醒','⏰');
+    scheduleReminder();
+  });
+}
+function scheduleReminder(){
+  var r=loadReminder();
+  if(!r||!r.enabled)return;
+  var now=new Date();
+  var parts=r.time.split(':');
+  var target=new Date();
+  target.setHours(parseInt(parts[0]),parseInt(parts[1]),0,0);
+  if(target<=now)target.setDate(target.getDate()+1);
+  var delay=target.getTime()-now.getTime();
+  
+  setTimeout(function(){
+    showDailyNotification();
+    scheduleReminder();
+  },delay);
+}
+function showDailyNotification(){
+  var r=loadReminder();
+  if(!r)return;
+  var hd=getHex(r.hex);
+  var title='📅 今日卦象提醒';
+  var body=hd.name+' · '+hd.tag+'\n'+hd.short;
+  new Notification(title,{body:body,icon:'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="0.9em" font-size="90">☯</text></svg>'});
+}
+function checkReminderOnLoad(){
+  var r=loadReminder();
+  if(!r||!r.enabled)return;
+  scheduleReminder();
+}
+
 function getLastRecord(){
   var h=loadHistory();
   return h.length?h[0]:null;
@@ -826,7 +1086,7 @@ function resetAdviceUI(){
   try{
     document.getElementById('advice').style.display='none';
     document.getElementById('locked').style.display='block';
-    document.getElementById('btnUnlock').style.display='block';
+    document.getElementById('btnUnlock').style.display='none';
     document.getElementById('sharePrev').innerHTML='';
     document.getElementById('hexLines').innerHTML='';
     document.getElementById('hexTransition').innerHTML='';
@@ -925,13 +1185,17 @@ function calc(){
   setTimeout(function(){
     hexIdx=xorFold(answers);
     changeMask=getChangeMask(answers);
-    unlocked=false;
+    unlocked=true;
     resetAdviceUI();
     applyHexTheme(hexIdx);
     render();
     S('result');
     playIntroChime();
     animateHexLines(function(){playFinalGong();});
+    setTimeout(function(){
+      document.getElementById('locked').style.display='none';
+      document.getElementById('advice').style.display='block';
+    }, 2800);
     // 存历史
     saveHistory({hex:hexIdx,mask:changeMask,time:Date.now(),answers:answers.slice(),vi:QVidx.slice()});
   },2000);
@@ -1086,10 +1350,30 @@ function render(){
       '<div class="final-words">✨ <strong>卦象不是命定，是你当下的镜子。</strong><br>下周的卦象，由你本周做的每一个选择决定。<br>七天后回来——看看你的卦，变了没有。</div>';
 
     renderAlgo(hd,cd,changeCount,cl);
+    updateFavoriteBtn();
+    renderNotes();
   }catch(e){
     document.getElementById('desc').innerHTML='<p style="color:var(--rl);">渲染出错: '+e.message+'。请刷新重试。</p>';
     console.error(e);
   }
+}
+
+function renderNotes(){
+  var notes=getNotes(hexIdx);
+  var desc=document.getElementById('desc');
+  if(!notes.length)return;
+  var html='<div class="compare-viz" style="margin-top:16px;">';
+  html+='<div class="cv-title">📝 我的笔记</div>';
+  html+='<div style="display:flex;flex-direction:column;gap:8px;">';
+  notes.forEach(function(n){
+    var d=new Date(n.time);
+    html+='<div style="padding:10px;background:rgba(201,169,110,0.08);border-radius:8px;border-left:3px solid var(--gold);">';
+    html+='<div style="font-size:13px;line-height:1.8;color:var(--ink);">'+n.text+'</div>';
+    html+='<div style="font-size:11px;color:#b8a88a;margin-top:4px;">'+d.getMonth()+1+'月'+d.getDate()+'日 '+pad(d.getHours())+':'+pad(d.getMinutes())+'</div>';
+    html+='</div>';
+  });
+  html+='</div></div>';
+  desc.insertAdjacentHTML('beforeend',html);
 }
 
 function countBits(n){var c=0;while(n){c+=n&1;n>>=1;}return c;}
@@ -1287,8 +1571,10 @@ function viewHistoryRecord(rec){
 function showHistory(){
   var hist=loadHistory();
   var list=document.getElementById('histList');
+  var compareBtn=document.getElementById('btnCompare');
   if(!hist.length){
     list.innerHTML='<div class="hist-empty"><div class="hi-icon">📜</div>还 没 有 卦 象 记 录<br>起 一 卦 开 始 你 的 故 事</div>';
+    compareBtn.style.display='none';
   }else{
     list.innerHTML=hist.map(function(r){
       var h=getHex(r.hex);
@@ -1302,8 +1588,248 @@ function showHistory(){
         if(rec)viewHistoryRecord(rec);
       });
     });
+    compareBtn.style.display=hist.length>=2?'block':'none';
   }
   S('history');
+}
+
+function showFavorites(){
+  var favs=loadFavorites();
+  var list=document.getElementById('favList');
+  if(!favs.length){
+    list.innerHTML='<div class="hist-empty"><div class="hi-icon">⭐</div>还 没 有 收 藏 的 卦 象<br>在 结 果 页 点 击 收 藏 添 加</div>';
+  }else{
+    list.innerHTML=favs.map(function(hex){
+      var h=getHex(hex);
+      var notes=getNotes(hex);
+      return '<div class="hist-item" data-hex="'+hex+'"><div class="hi-sym">'+h.symbol+'</div><div class="hi-info"><div class="hi-name">'+h.name+' · '+h.tag+'</div><div class="hi-date" style="color:var(--gold);font-size:11px;">'+(notes.length?'📝 '+notes.length+'条笔记':'')+'</div></div><div style="color:var(--gold);">→</div></div>';
+    }).join('');
+    list.querySelectorAll('.hist-item').forEach(function(it){
+      it.addEventListener('click',function(){
+        var hex=+it.getAttribute('data-hex');
+        var rec={hex:hex,mask:0,time:Date.now(),answers:[]};
+        viewHistoryRecord(rec);
+      });
+    });
+  }
+  S('favorites');
+}
+
+function openNoteModal(){
+  document.getElementById('noteInput').value='';
+  document.getElementById('overlayNote').classList.add('active');
+}
+
+function saveNote(){
+  var text=document.getElementById('noteInput').value.trim();
+  if(!text){showAlert('提示','请输入笔记内容','📝');return;}
+  addNote(hexIdx,text);
+  closeAllModals();
+  showAlert('笔记已保存','你的感悟已记录','📝');
+}
+
+function showCompare(){
+  var hist=loadHistory();
+  if(hist.length<2){showAlert('提示','至少需要两次卦象记录才能对比','📊');return;}
+  var curr=hist[0],prev=hist[1];
+  var currHex=getHex(curr.hex),prevHex=getHex(prev.hex);
+  var currD=new Date(curr.time),prevD=new Date(prev.time);
+  var diffDays=Math.floor((curr.time-prev.time)/(1000*60*60*24));
+  
+  var changeAnalysis='';
+  if(curr.hex===prev.hex){
+    changeAnalysis='卦象未变——你仍处在同一个状态周期中。这可能意味着你在稳固地积累，也可能意味着需要一些新的变化来打破僵局。';
+  }else{
+    changeAnalysis='卦象已变——你的状态正在发生转变。从「'+prevHex.name+'」到「'+currHex.name+'」，这是一个值得关注的信号。';
+  }
+  
+  var variantChange=0;
+  if(curr.vi&&prev.vi){
+    for(var i=0;i<Math.min(curr.vi.length,prev.vi.length);i++){
+      if(curr.vi[i]!==prev.vi[i])variantChange++;
+    }
+  }
+  
+  var content='';
+  content+='<div class="compare-row">';
+  content+='<div class="compare-card">';
+  content+='<div class="cc-date">'+prevD.getMonth()+1+'月'+prevD.getDate()+'日</div>';
+  content+='<div class="cc-sym">'+prevHex.symbol+'</div>';
+  content+='<div class="cc-name">'+prevHex.name+'</div>';
+  content+='<div class="cc-tag">「'+prevHex.tag+'」</div>';
+  content+='</div>';
+  content+='<div class="compare-arrow">→</div>';
+  content+='<div class="compare-card">';
+  content+='<div class="cc-date">'+currD.getMonth()+1+'月'+currD.getDate()+'日</div>';
+  content+='<div class="cc-sym">'+currHex.symbol+'</div>';
+  content+='<div class="cc-name">'+currHex.name+'</div>';
+  content+='<div class="cc-tag">「'+currHex.tag+'」</div>';
+  content+='</div>';
+  content+='</div>';
+  
+  content+='<div class="compare-viz">';
+  content+='<div class="cv-title">📊 对比数据</div>';
+  content+='<div class="cv-grid">';
+  content+='<div class="cv-item"><div class="cv-icon">📅</div><div class="cv-text">间隔 '+diffDays+' 天</div></div>';
+  content+='<div class="cv-item"><div class="cv-icon">🔄</div><div class="cv-text">'+(curr.hex===prev.hex?'卦象未变':'卦象已变')+'</div></div>';
+  content+='<div class="cv-item"><div class="cv-icon">⚡</div><div class="cv-text">变爻 '+countBits(curr.mask)+' → '+countBits(prev.mask)+'</div></div>';
+  content+='<div class="cv-item"><div class="cv-icon">📝</div><div class="cv-text">题面差异 '+variantChange+' 处</div></div>';
+  content+='</div></div>';
+  
+  content+='<div class="compare-change">';
+  content+='<div class="cc-label">🔮 变化解读</div>';
+  content+='<p>'+changeAnalysis+'</p>';
+  content+='</div>';
+  
+  content+='<div class="compare-viz">';
+  content+='<div class="cv-title">📜 卦辞对比</div>';
+  content+='<div class="cv-grid">';
+  content+='<div class="cv-item"><div class="cv-icon">📖</div><div class="cv-text">'+prevHex.short+'</div></div>';
+  content+='<div class="cv-item"><div class="cv-icon">📖</div><div class="cv-text">'+currHex.short+'</div></div>';
+  content+='</div></div>';
+  
+  content+='<div class="compare-summary">';
+  content+='<div class="cs-title">✨ 对比总结</div>';
+  content+='<div class="cs-text">';
+  if(curr.hex===prev.hex){
+    content+='你的卦象保持稳定，这是「守」的阶段。<br>';
+    content+='建议：在稳定中寻找微小的突破点，不要急于求变。';
+  }else{
+    content+='你的卦象发生了变化，这是「动」的信号。<br>';
+    content+='从「'+prevHex.tag+'」到「'+currHex.tag+'」，你正在经历转变。<br>';
+    content+='建议：关注变化带来的新机会，勇敢地向前迈出一步。';
+  }
+  content+='</div></div>';
+  
+  document.getElementById('compareContent').innerHTML=content;
+  S('compare');
+}
+
+// ===== 六十四卦列表 =====
+function showHexList(){
+  var grid=document.getElementById('hexGrid');
+  var html='';
+  for(var i=0;i<64;i++){
+    var h=getHex(i);
+    html+='<div class="hex-grid-item" data-hex="'+i+'">';
+    html+='<div class="hgi-sym">'+h.symbol+'</div>';
+    html+='<div class="hgi-name">'+h.name+'</div>';
+    html+='</div>';
+  }
+  grid.innerHTML=html;
+  grid.querySelectorAll('.hex-grid-item').forEach(function(it){
+    it.addEventListener('click',function(){
+      var hex=+it.getAttribute('data-hex');
+      showHexDetail(hex);
+    });
+  });
+  S('hexlist');
+}
+
+// ===== 卦象详情页面 =====
+function showHexDetail(hex){
+  hexIdx=hex;
+  changeMask=0;
+  applyHexTheme(hex);
+  var hd=getHex(hex);
+  document.getElementById('hexDetailDisp').innerHTML=
+    '<div class="mini-label">☯ '+hd.name+'</div>'+
+    '<div class="hex-symbol-wrap"><div class="hex-symbol">'+hd.symbol+'</div></div>'+
+    '<div class="hex-name">'+hd.name+'</div>'+
+    '<div class="hex-tag">「'+hd.tag+'」</div>';
+  var container=document.getElementById('hexDetailLines');
+  container.innerHTML='';
+  var html='';
+  for(var i=5;i>=0;i--){
+    var yang=((hex>>i)&1)===1;
+    if(yang){
+      html+='<div class="hy"><div class="hy-bar yang" data-i="'+i+'"></div></div>';
+    }else{
+      html+='<div class="hy"><div class="hy-yin-wrap"><div class="hy-bar yin-l" data-i="'+i+'"></div><div class="hy-bar yin-r" data-i="'+i+'"></div></div></div>';
+    }
+  }
+  container.innerHTML=html;
+  var bars=container.querySelectorAll('.hy-bar');
+  bars.forEach(function(b){b.style.animation='none';b.offsetHeight;});
+  for(var i=0;i<6;i++){
+    (function(yi){
+      setTimeout(function(){
+        var targets=container.querySelectorAll('[data-i="'+yi+'"]');
+        var isYang=targets[0]&&targets[0].classList.contains('yang');
+        targets.forEach(function(b){
+          var t=isYang?'growYang':(b.classList.contains('yin-l')?'growYinL':'growYinR');
+          b.style.animation=t+' 0.6s cubic-bezier(.34,1.56,.64,1) forwards';
+        });
+      },yi*150+100);
+    })(i);
+  }
+  var classicsHTML='';
+  if(hd.judgment||hd.image){
+    classicsHTML=
+      '<div class="classics-box">'+
+      (hd.judgment?'<div class="classic-line"><span class="classic-tag">卦辞</span><span class="classic-text">'+hd.judgment+'</span></div>':'')+
+      (hd.image?'<div class="classic-line"><span class="classic-tag">象曰</span><span class="classic-text">'+hd.image+'</span></div>':'')+
+      '</div>';
+  }
+  var yaoHTML='';
+  for(var j=0;j<6;j++){
+    var yn=((hex>>j)&1)?'阳':'阴';
+    yaoHTML+='<div class="yao-detail">'+
+      '<div class="yao-num">'+['初','二','三','四','五','上'][j]+'爻 · '+yn+'爻</div>'+
+      '<p>'+hd.yao[j]+'</p></div>';
+  }
+  var detailHTML=classicsHTML+
+    '<p style="font-size:16px;line-height:2.2;text-align:left;padding:0 4px;margin-top:14px;">'+hd.desc+'</p>'+
+    (hd.short?'<p style="font-size:14px;line-height:2;color:var(--il);margin-top:12px;">'+hd.short+'</p>':'')+
+    '<h3 style="margin-top:24px;color:var(--gold);letter-spacing:4px;">📜 六 爻 逐 解</h3>'+yaoHTML+
+    '<h3 style="margin-top:24px;color:var(--gold);letter-spacing:4px;">💡 改 运 指 南</h3>'+
+    '<p style="line-height:2;font-size:15px;">'+hd.advice+'</p>';
+  document.getElementById('hexDetailDesc').innerHTML=detailHTML;
+  S('hexdetail');
+}
+
+// ===== 五行相生相克可视化 =====
+function showFiveElements(){
+  var content='';
+  content+='<div class="five-ring">';
+  content+='<div class="five-element wood" data-element="wood">木</div>';
+  content+='<div class="five-element fire" data-element="fire">火</div>';
+  content+='<div class="five-element earth" data-element="earth">土</div>';
+  content+='<div class="five-element metal" data-element="metal">金</div>';
+  content+='<div class="five-element water" data-element="water">水</div>';
+  content+='</div>';
+  content+='<div class="five-info">';
+  content+='<div class="fi-title">🌱 相 生 关 系</div>';
+  content+='<p>木生火 → 火生土 → 土生金 → 金生水 → 水生木</p>';
+  content+='<p style="margin-top:8px;font-size:13px;color:var(--il);">木生火：木可燃烧产生火焰；火生土：火燃烧后化为灰烬；土生金：土里蕴藏金属矿物；金生水：金属可融化成液体；水生木：水滋养树木生长。</p>';
+  content+='</div>';
+  content+='<div class="five-info">';
+  content+='<div class="fi-title">⚔ 相 克 关 系</div>';
+  content+='<p>木克土 → 土克水 → 水克火 → 火克金 → 金克木</p>';
+  content+='<p style="margin-top:8px;font-size:13px;color:var(--il);">木克土：树木根系破土而出；土克水：土能阻挡水流；水克火：水能浇灭火焰；火克金：火能熔化金属；金克木：金属器具可砍伐树木。</p>';
+  content+='</div>';
+  content+='<div class="five-info">';
+  content+='<div class="fi-title">🔮 生 活 运 用</div>';
+  content+='<p>五行相生相克的道理可以应用于生活的方方面面。当你感到某一方面「过盛」或「不足」时，可以通过相生相克的关系来调节。例如：若感到心火过旺（焦虑、烦躁），可以用水元素（冷静、冥想）来克制；若感到缺乏动力，可以用火元素（热情、行动）来补充。</p>';
+  content+='</div>';
+  document.getElementById('fiveContent').innerHTML=content;
+  S('fiveelements');
+}
+
+// ===== 暗色模式切换 =====
+function toggleTheme(){
+  var body=document.body;
+  var isDark=body.classList.toggle('dark');
+  localStorage.setItem('iching-now-theme',isDark?'dark':'light');
+  showAlert(isDark?'暗色模式':'亮色模式','已切换到'+(isDark?'暗色':'亮色')+'主题','🌓');
+}
+
+function initTheme(){
+  var saved=localStorage.getItem('iching-now-theme');
+  var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if(saved==='dark'||(!saved&&prefersDark)){
+    document.body.classList.add('dark');
+  }
 }
 
 // ===== 事件绑定 =====
@@ -1360,8 +1886,22 @@ B('btnRestart',function(){
 });
 B('btnSound',toggleSound);
 B('btnMusic',toggleMusic);
+B('btnTheme',toggleTheme);
+B('btnFive',showFiveElements);
+B('btnFiveBack',function(){renderLanding();S('landing');});
+B('btnHexList',showHexList);
+B('btnHexListBack',function(){renderLanding();S('landing');});
+B('btnHexDetailBack',function(){showHexList();});
 B('btnHist',showHistory);
 B('btnHistBack',function(){renderLanding();S('landing');});
+B('btnCompare',showCompare);
+B('btnCompareBack',function(){showHistory();});
+B('btnFav',showFavorites);
+B('btnFavBack',function(){renderLanding();S('landing');});
+B('btnFavorite',function(){toggleFavorite(hexIdx);});
+B('btnAddNote',openNoteModal);
+B('btnNoteSave',saveNote);
+B('btnReminder',setDailyReminder);
 B('btnPay',simPay);
 B('btnPayClose',function(){closeAllModals();setTimeout(unlock,100);});
 
@@ -1475,7 +2015,9 @@ document.addEventListener('visibilitychange',function(){
 });
 
 // 启动
+initTheme();
 renderLanding();
 S('landing');
 primeAudio(); // 进入页面即激活音频（背景音乐 + 音效默认开启）
 updateAudioButtons();
+checkReminderOnLoad(); // 检查并调度每日提醒
